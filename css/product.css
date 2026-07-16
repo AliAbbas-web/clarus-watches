@@ -1,0 +1,174 @@
+/* ==========================================================================
+   PRODUCT DETAIL PAGE (product.html)
+   Everything below is driven entirely by the product object rendered
+   into #productDetail by js/product-page.js — this file only styles the
+   shell so any future product automatically looks right.
+   Breadcrumb styles now live in components.css (shared with category.html).
+   ========================================================================== */
+
+/* ---------------- Product detail grid ---------------- */
+.pd-section { padding-top: var(--sp-4); }
+
+.pd-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: var(--sp-7);
+  align-items: start;
+}
+
+/* ---------------- Gallery ---------------- */
+.pd-gallery { position: sticky; top: calc(var(--nav-h) + var(--sp-4)); }
+
+.pd-gallery-frame {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--sp-5);
+  box-shadow: var(--shadow-sm);
+}
+.pd-gallery-frame img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+.pd-gallery-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: var(--overlay);
+  color: var(--text-0);
+  font-size: 1.6rem;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: background var(--dur-fast) var(--ease);
+}
+.pd-gallery-nav:hover { background: var(--accent); color: var(--accent-contrast); }
+.pd-gallery-nav.prev { left: var(--sp-3); }
+.pd-gallery-nav.next { right: var(--sp-3); }
+
+.pd-gallery-count {
+  position: absolute;
+  bottom: var(--sp-3); left: 50%;
+  transform: translateX(-50%);
+  background: var(--overlay);
+  color: var(--text-0);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  z-index: 2;
+}
+
+.pd-thumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin-top: var(--sp-3);
+}
+.pd-thumb {
+  width: 64px; height: 64px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: var(--bg-2);
+  padding: 4px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border-color var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease);
+}
+.pd-thumb img { width: 100%; height: 100%; object-fit: cover; border-radius: 2px; }
+.pd-thumb:hover { border-color: var(--accent); transform: translateY(-2px); }
+.pd-thumb.is-active { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+
+/* ---------------- Info panel ---------------- */
+.pd-info { display: flex; flex-direction: column; min-width: 0; }
+.pd-code { position: static; display: inline-flex; align-self: flex-start; background: var(--accent-soft); color: var(--accent); margin-bottom: var(--sp-3); }
+.pd-category {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-2);
+  margin-bottom: var(--sp-2);
+}
+.pd-title { font-size: var(--fs-2xl); line-height: 1.15; margin-bottom: var(--sp-2); }
+.pd-price { font-size: var(--fs-xl); margin-bottom: var(--sp-4); color: #34e600; font-weight: 700; }
+.pd-desc { color: var(--text-1); font-size: var(--fs-md); line-height: 1.6; margin-bottom: var(--sp-5); }
+
+.pd-block-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-2);
+  margin-bottom: var(--sp-3);
+}
+
+.pd-features { margin-bottom: var(--sp-5); }
+.pd-feature-list { display: grid; gap: var(--sp-2); }
+.pd-feature-list li {
+  position: relative;
+  padding-left: var(--sp-4);
+  font-size: var(--fs-sm);
+  color: var(--text-1);
+  line-height: 1.5;
+}
+.pd-feature-list li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0.55em;
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.pd-subhead { font-size: var(--fs-base); margin-bottom: var(--sp-3); }
+.pd-specs { margin-bottom: var(--sp-5); }
+
+.pd-actions { display: flex; gap: var(--sp-3); flex-wrap: wrap; margin-top: auto; }
+.pd-actions .btn { flex: 1 1 220px; }
+
+/* ---------------- Skeleton loading state ---------------- */
+.pd-skeleton { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: var(--sp-7); }
+.pd-skeleton-media { aspect-ratio: 1/1; border-radius: var(--radius-lg); }
+.pd-skeleton-info { display: grid; gap: var(--sp-4); align-content: start; }
+.pd-skeleton-line { height: 1rem; border-radius: var(--radius-sm); }
+
+/* ---------------- Not found state ---------------- */
+.pd-not-found {
+  text-align: center;
+  max-width: 480px;
+  margin-inline: auto;
+  padding-block: var(--sp-7);
+}
+.pd-not-found .eyebrow { justify-content: center; }
+.pd-not-found h1 { font-size: var(--fs-2xl); margin-bottom: var(--sp-3); }
+.pd-not-found p { color: var(--text-2); margin-bottom: var(--sp-5); }
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 960px) {
+  .pd-grid, .pd-skeleton { grid-template-columns: 1fr; }
+  .pd-gallery { position: static; }
+}
+@media (max-width: 640px) {
+  .pd-title { font-size: var(--fs-xl); }
+  .pd-actions .btn { flex: 1 1 100%; }
+}

@@ -1,0 +1,118 @@
+/* ==========================================================================
+   RESPONSIVE — tablet & mobile breakpoints
+   Loaded last so its rules take priority at smaller widths.
+   ========================================================================== */
+
+/* ---------------- Desktop (4-column grid): cap card width so cards
+   read smaller and sit centered within their column, instead of
+   stretching edge-to-edge. ---------------- */
+@media (min-width: 961px) {
+  .product-card { max-width: 240px; margin-inline: auto; }
+}
+
+/* ---------------- Large desktop down to laptop ---------------- */
+@media (max-width: 1180px) {
+  .stats-grid { grid-template-columns: repeat(3, 1fr); }
+  .feature-grid { grid-template-columns: repeat(3, 1fr); }
+  .collection-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ---------------- Tablet ---------------- */
+@media (max-width: 960px) {
+  .nav-links {
+    position: fixed;
+    top: var(--nav-h);
+    left: 0; right: 0;
+    background: var(--bg-0);
+    border-bottom: 1px solid var(--line);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: var(--sp-3) var(--sp-4);
+    transform: translateY(-140%);
+    opacity: 0;
+    transition: transform var(--dur-med) var(--ease), opacity var(--dur-med) var(--ease);
+  }
+  .nav-links.is-open { transform: translateY(0); opacity: 1; }
+  .nav-links a { width: 100%; padding-block: var(--sp-3); border-bottom: 1px solid var(--line); }
+  .nav-toggle { display: flex; }
+
+  .nav-item-dropdown { width: 100%; border-bottom: 1px solid var(--line); }
+  .nav-dropdown-trigger { width: 100%; justify-content: space-between; padding-block: var(--sp-3); }
+  .nav-dropdown-panel {
+    position: static;
+    width: 100%;
+    min-width: 0;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    background: var(--bg-1);
+    margin-top: 0;
+    padding: 0 0 var(--sp-2);
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .nav-dropdown-panel::before { display: none; }
+  .nav-item-dropdown.is-open .nav-dropdown-panel { display: flex; }
+  .nav-dropdown-link { padding-left: var(--sp-4); }
+  .nav-dropdown-link::after { left: var(--sp-4); }
+
+  .hero .container { grid-template-columns: 1fr; text-align: center; }
+  .hero-copy { order: 2; }
+  .hero-visual { order: 1; }
+  .hero-copy .hero-sub { margin-inline: auto; }
+  .hero-cta { justify-content: center; }
+
+  .about-grid { grid-template-columns: 1fr; }
+  .about-visual { position: static; max-width: 320px; margin-inline: auto; }
+
+  .contact-grid { grid-template-columns: 1fr; }
+
+  .product-grid { grid-template-columns: repeat(3, 1fr); }
+  .collection-grid { grid-template-columns: repeat(2, 1fr); }
+  .feedback-grid { grid-template-columns: repeat(2, 1fr); }
+  .feedback-toolbar { flex-direction: column; align-items: flex-start; }
+
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+
+  .modal-scroll { grid-template-columns: 1fr; }
+  .modal-info { border-left: none; border-top: 1px solid var(--line); }
+}
+
+/* ---------------- Mobile ---------------- */
+@media (max-width: 640px) {
+  :root { --sp-8: 4.5rem; --sp-7: 3rem; }
+
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .feature-grid { grid-template-columns: repeat(2, 1fr); }
+  .product-grid { grid-template-columns: repeat(2, 1fr); }
+  .collection-grid { grid-template-columns: 1fr; }
+  .feedback-grid { grid-template-columns: 1fr; }
+
+  .form-row { grid-template-columns: 1fr; }
+
+  .footer-grid { grid-template-columns: 1fr; gap: var(--sp-5); }
+  .footer-bottom { flex-direction: column; gap: var(--sp-3); text-align: center; }
+
+  .product-actions { flex-direction: column; }
+
+  .spec-list { grid-template-columns: 1fr; }
+
+  .sort-bar { justify-content: center; }
+  .sort-select { flex: 1; }
+  .sort-select-wrap { width: 100%; max-width: 320px; }
+
+  .products-toolbar { flex-direction: column; align-items: stretch; }
+  .products-search { min-width: 0; }
+
+  .whatsapp-float { width: 50px; height: 50px; right: var(--sp-3); bottom: var(--sp-3); }
+  .whatsapp-float svg { width: 24px; height: 24px; }
+}
+
+@media (max-width: 420px) {
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .product-grid { grid-template-columns: 1fr; }
+}

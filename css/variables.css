@@ -1,0 +1,73 @@
+/* ==========================================================================
+   CLARUS WATCHES — DESIGN TOKENS
+   Every color, font and spacing value used across the site lives here.
+   Change a value once, it updates everywhere. This is the only file
+   you should need to touch to re-skin the site.
+   ========================================================================== */
+
+:root {
+  /* ---- Brand ---- */
+  --accent: #34e600;              /* Clarus signature green   */
+  --accent-soft: #34e60022;       /* translucent accent (glows, hovers) */
+  --accent-strong: #2bbf00;       /* pressed / darker state   */
+  --accent-contrast: #06170a;     /* text placed ON the accent */
+  --price-green: #00C904;         /* deep, premium green for final prices */
+
+  /* ---- Light theme (default) ---- */
+  --bg-0: #ffffff;                 /* page background            */
+  --bg-1: #ffffff;                 /* section background (alt)   */
+  --bg-2: #ffffff;                 /* card background             */
+  --bg-3: #f4f3ee;                 /* elevated / hovered card     */
+  --line: #e2e0d6;                 /* hairline borders            */
+  --text-0: #14140f;               /* headings / primary text     */
+  --text-1: #4c4c44;               /* body copy                   */
+  --text-2: #83837a;               /* muted / captions            */
+  --overlay: rgba(20, 20, 15, 0.55); /* modal / hero overlays      */
+
+  /* ---- Typography ----
+     Display: Fraunces — a soft, high-contrast serif with a horological,
+       engraved feel for headlines (used sparingly, big sizes only).
+     Body: Inter — quiet, legible workhorse for paragraphs & UI.
+     Data: JetBrains Mono — for prices, product codes and specs, the
+       way a watch's caseback or movement spec sheet reads.
+  */
+  --font-display: 'Fraunces', 'Georgia', serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.375rem;
+  --fs-xl: 2rem;
+  --fs-2xl: 2.75rem;
+  --fs-3xl: 4rem;
+  --fs-hero: clamp(2.75rem, 7vw, 6.25rem);
+
+  /* ---- Spacing scale ---- */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 1rem;
+  --sp-4: 1.5rem;
+  --sp-5: 2rem;
+  --sp-6: 3rem;
+  --sp-7: 5rem;
+  --sp-8: 8rem;
+
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+
+  --shadow-sm: 0 2px 12px rgba(20, 20, 15, 0.08);
+  --shadow-md: 0 12px 40px rgba(20, 20, 15, 0.12);
+  --shadow-glow: 0 0 0 1px var(--accent-soft), 0 0 24px var(--accent-soft);
+
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 180ms;
+  --dur-med: 400ms;
+  --dur-slow: 800ms;
+
+  --container: 1240px;
+  --nav-h: 108px;
+}

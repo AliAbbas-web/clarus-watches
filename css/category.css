@@ -1,0 +1,161 @@
+/* ==========================================================================
+   CATEGORY PAGE (category.html)
+   One reusable template for every category — Men's Watches, Women's
+   Watches, Couple Watches, and any future category value that shows up
+   in products-data.js. Nothing here is category-specific; the hero
+   text and product grid are both filled in at runtime by
+   js/category-page.js.
+   ========================================================================== */
+
+/* ---------------- Hero banner ----------------
+   Deliberately always dark (independent of the light/dark site theme)
+   for a consistent premium black/green/white look, full-bleed edge to
+   edge like a flagship collection banner. */
+.category-hero {
+  position: relative;
+  overflow: hidden;
+  margin-top: calc(var(--nav-h) + var(--sp-4));
+  padding-top: var(--sp-7);
+  padding-bottom: var(--sp-7);
+  background: linear-gradient(155deg, #050605 0%, #0c0d0b 55%, #060706 100%);
+  border-bottom: 1px solid var(--accent-soft);
+  text-align: center;
+}
+
+/* Faint engraved dial-style rings, echoing the watch-face placeholders
+   used elsewhere on the site — pure CSS, no image dependency. */
+.category-hero::before,
+.category-hero::after {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 640px; height: 640px;
+  border: 1px solid rgba(52, 230, 0, 0.08);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.category-hero::after { width: 440px; height: 440px; border-color: rgba(52, 230, 0, 0.12); }
+
+.category-hero-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 55% 70% at 50% 15%, var(--accent-soft), transparent 70%);
+  pointer-events: none;
+}
+
+.category-hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  margin-inline: auto;
+  padding-inline: var(--sp-4);
+}
+
+.category-hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--sp-3);
+}
+.category-hero-eyebrow::before,
+.category-hero-eyebrow::after {
+  content: '';
+  width: 22px; height: 1px;
+  background: var(--accent);
+  opacity: 0.6;
+}
+
+.category-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  color: #f7f7f2;
+  margin-bottom: var(--sp-3);
+  white-space: nowrap;
+}
+
+.category-hero-desc {
+  color: #b9b9b2;
+  font-size: var(--fs-md);
+  max-width: 480px;
+  margin-inline: auto;
+  margin-bottom: var(--sp-4);
+}
+
+.category-hero-count {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #f7f7f2;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+}
+.category-hero-count::before {
+  content: '';
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent);
+}
+
+/* ---------------- Product grid section ---------------- */
+.category-section { padding-top: var(--sp-6); }
+
+.category-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: var(--sp-4);
+}
+
+/* ---------------- Skeleton loading state ---------------- */
+.category-hero-skeleton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-3);
+  position: relative;
+  z-index: 1;
+}
+.category-hero-skeleton .skeleton {
+  border-radius: var(--radius-sm);
+  background: linear-gradient(90deg, #1b1b1a 25%, #232321 37%, #1b1b1a 63%);
+  background-size: 400% 100%;
+}
+
+/* ---------------- Not found state ---------------- */
+.category-not-found {
+  text-align: center;
+  max-width: 480px;
+  margin-inline: auto;
+  padding-block: var(--sp-7);
+}
+.category-not-found h1 { font-size: var(--fs-2xl); margin-bottom: var(--sp-3); }
+.category-not-found p { color: var(--text-2); margin-bottom: var(--sp-5); }
+
+.category-empty {
+  text-align: center;
+  color: var(--text-2);
+  padding-block: var(--sp-6);
+  grid-column: 1 / -1;
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 640px) {
+  .category-hero { padding-bottom: var(--sp-5); }
+  .category-hero-title { font-size: clamp(1.5rem, 8vw, 2.25rem); }
+  .category-hero::before { width: 380px; height: 380px; }
+  .category-hero::after { width: 260px; height: 260px; }
+}
