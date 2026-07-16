@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="https://i.postimg.cc/Nfq2gf72/Clarus-Watches-Logo.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <title>Watch Collection | Clarus Watches</title>
+  <meta name="description" content="Browse the Clarus Watches collection by category and order instantly through WhatsApp.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/products.css">
+  <link rel="stylesheet" href="css/category.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <img src="https://i.postimg.cc/Nfq2gf72/Clarus-Watches-Logo.jpg" alt="Clarus Watches logo" class="nav-logo">
+        Clarus Watches
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="nav-item-dropdown" id="watchesDropdown">
+          <button type="button" class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+            Watches
+            <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="nav-dropdown-panel" id="watchesDropdownPanel"></div>
+        </li>
+        <li><a href="products.html">All Products</a></li>
+        <li><a href="reviews.html">User Feedbacks</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HERO BANNER (generated) ================= -->
+  <header class="category-hero" id="categoryHero">
+    <div class="category-hero-glow"></div>
+    <div class="category-hero-inner">
+      <div class="category-hero-skeleton" role="status" aria-live="polite">
+        <div class="skeleton" style="width:120px;height:12px;"></div>
+        <div class="skeleton" style="width:320px;height:52px;"></div>
+        <div class="skeleton" style="width:160px;height:28px;border-radius:999px;"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= BREADCRUMBS (generated) ================= -->
+  <nav class="breadcrumb-bar" id="breadcrumbBar" aria-label="Breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb-list" id="breadcrumbList"></ol>
+    </div>
+  </nav>
+
+  <!-- ================= CATEGORY GRID (generated) ================= -->
+  <section class="section category-section">
+    <div class="container">
+      <div class="category-toolbar">
+        <div class="sort-bar">
+          <label for="sortSelect" class="sort-label">Sort by</label>
+          <div class="sort-select-wrap">
+            <select id="sortSelect" class="sort-select">
+              <option value="default">Default</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+            </select>
+            <svg class="sort-select-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="product-grid" id="categoryGrid"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="https://i.postimg.cc/Nfq2gf72/Clarus-Watches-Logo.jpg" alt="Clarus Watches logo" class="footer-logo">
+            Clarus Watches
+          </div>
+          <p>Premium-quality watches at affordable prices, established in 2024 and trusted across Pakistan.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/claruswatches" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+            </a>
+            <a href="https://wa.me/923343407848" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="reviews.html">User Feedbacks</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="https://wa.me/923343407848" target="_blank" rel="noopener">0334 3407848</a></li>
+            <li><a href="mailto:claruswatches@gmail.com">claruswatches@gmail.com</a></li>
+            <li><a href="https://instagram.com/claruswatches" target="_blank" rel="noopener">@claruswatches</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span id="year"></span> Clarus Watches. All rights reserved.</span>
+        <button class="back-to-top" id="backToTop">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+          Back to Top
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" id="whatsappFloat" target="_blank" rel="noopener"
+     href="https://wa.me/923343407848?text=Hello%20Clarus%20Watches%2C%20I%20have%20a%20question."
+     aria-label="Chat with Clarus Watches on WhatsApp">
+    <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.9C13.5 27.7 14.7 28 16 28c6.6 0 12-5.4 12-12S22.6 3 16 3zm0 22c-1.2 0-2.4-.3-3.4-.8l-.7-.4-4.5 1.1 1.2-4.4-.4-.7C7.3 18 6.7 16.6 6.7 15c0-5.1 4.2-9.3 9.3-9.3s9.3 4.2 9.3 9.3-4.2 9.3-9.3 9.3zm5.1-6.9c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.7-1.6-1.9-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 .9-1 2.3s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.5-.3z"/></svg>
+  </a>
+
+  <script src="js/utils.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/counters.js"></script>
+  <script src="js/products-data.js"></script>
+  <script src="js/nav-dropdown.js"></script>
+  <script src="js/category-page.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
