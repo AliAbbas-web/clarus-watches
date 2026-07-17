@@ -687,4 +687,59 @@ const CLARUS_PRODUCTS = [
   ],
   featured: false,
 },
+   {
+  code: 'CW022',
+  name: 'White Aura',
+  category: "Men's Watches",
+  price: 1700,
+  shortDesc: 'Marble design watch with fibre quality and butterfly lock.',
+  description: 'The White Aura watch features a unique marble design with a premium fibre quality finish and a secure butterfly lock for a comfortable fit. Its modern and elegant look makes it suitable for both everyday wear and special occasions. Comes packed in a normal box.',
+  image: 'https://i.postimg.cc/9fkJWLdJ/Whats-App-Image-2026-07-17-at-6-22-01-PM-removebg-preview.png',
+  images: [
+    'https://i.postimg.cc/9fkJWLdJ/Whats-App-Image-2026-07-17-at-6-22-01-PM-removebg-preview.png'
+  ],
+  specs: {
+    'Design': 'Marble Design',
+    'Material': 'Fibre Quality',
+    'Lock': 'Butterfly Lock',
+    'Packaging': 'Normal Box Included'
+  },
+  features: [
+    'Premium marble design',
+    'Fibre quality finish',
+    'Secure butterfly lock',
+    'Modern everyday style'
+  ],
+  featured: false,
+},
+   {
+  code: 'CW023',
+  name: 'Universal Point',
+  category: "Men's Watches",
+  price: 2150,
+  shortDesc: 'Stylish watch with magnetic lock and premium modern design.',
+  description: 'The Universal Point watch features a sleek and modern design with a secure magnetic lock for a comfortable fit. Available in new attractive colours, it is perfect for both everyday wear and special occasions. Comes packed in a normal box.',
+  image: 'https://i.postimg.cc/4ddy11qF/1-removebg-preview-(1).png',
+  images: [
+    'https://i.postimg.cc/4ddy11qF/1-removebg-preview-(1).png',
+    'https://i.postimg.cc/hGMhxYyH/3-removebg-preview-(1).png',
+    'https://i.postimg.cc/R0GqfYpr/4-removebg-preview.png',
+    'https://i.postimg.cc/PqKNZ733/5-removebg-preview.png',
+    'https://i.postimg.cc/mrVhMnpW/6-removebg-preview.png',
+    'https://i.postimg.cc/6QzTRPjk/7-removebg-preview.png',
+    'https://i.postimg.cc/Jnn0QQv2/Whats-App-Image-2026-07-15-at-5-34-07-PM-removebg-preview.png'
+  ],
+  specs: {
+    'Lock': 'Magnetic Lock',
+    'Colours': 'New Attractive Colours',
+    'Packaging': 'Normal Box Included'
+  },
+  features: [
+    'Secure magnetic lock',
+    'Available in new attractive colours',
+    'Premium modern design',
+    'Comfortable for everyday wear'
+  ],
+  featured: false,
+},
 ];
