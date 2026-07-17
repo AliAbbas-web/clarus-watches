@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const navbar = document.getElementById('navbar');
   const navToggle = document.getElementById('navToggle');
   const navLinks = document.getElementById('navLinks');
+  const navOverlay = document.getElementById('navOverlay');
+  const navClose = document.getElementById('navClose');
   const links = Array.from(document.querySelectorAll('.nav-links a'));
   const backToTop = document.getElementById('backToTop');
 
@@ -39,20 +41,41 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', debounce(onScroll, 20));
   onScroll();
 
-  // ---- Mobile menu ----
+  // ---- Mobile menu (left-side off-canvas panel + dark overlay) ----
   if (navToggle) {
+    const openMenu = () => {
+      navLinks.classList.add('is-open');
+      navToggle.classList.add('is-open');
+      navToggle.setAttribute('aria-expanded', 'true');
+      if (navOverlay) navOverlay.classList.add('is-open');
+      document.body.classList.add('nav-open');
+    };
+
+    const closeMenu = () => {
+      navLinks.classList.remove('is-open');
+      navToggle.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      if (navOverlay) navOverlay.classList.remove('is-open');
+      document.body.classList.remove('nav-open');
+    };
+
     navToggle.addEventListener('click', () => {
-      const isOpen = navLinks.classList.toggle('is-open');
-      navToggle.classList.toggle('is-open', isOpen);
-      navToggle.setAttribute('aria-expanded', String(isOpen));
+      if (navLinks.classList.contains('is-open')) closeMenu();
+      else openMenu();
+    });
+
+    // Tapping the dark overlay outside the panel closes the menu.
+    if (navOverlay) navOverlay.addEventListener('click', closeMenu);
+
+    // Close (×) button at the top-right of the panel.
+    if (navClose) navClose.addEventListener('click', closeMenu);
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMenu();
     });
 
     links.forEach((link) => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('is-open');
-        navToggle.classList.remove('is-open');
-        navToggle.setAttribute('aria-expanded', 'false');
-      });
+      link.addEventListener('click', closeMenu);
     });
   }
 
