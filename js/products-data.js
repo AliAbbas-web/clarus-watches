@@ -152,7 +152,6 @@ const CLARUS_PRODUCTS = [
       'Case Size': '40mm',
       'Strap': 'Stainless Steel Bracelet',
       'Display': 'Date Window',
-      'Colours': 'Silver/White, Silver/Blue, Silver/Black'
     },
     features: [
       'Functional chronograph sub-dials',
@@ -161,7 +160,6 @@ const CLARUS_PRODUCTS = [
       'Reliable quartz movement',
       '40mm case suited to business or casual wear'
     ],
-    colours: ['Silver/White', 'Silver/Blue', 'Silver/Black'],
     featured: true
   },
   {
@@ -218,7 +216,6 @@ const CLARUS_PRODUCTS = [
       'Secure butterfly lock',
       'Unisex design suits both men and women'
     ],
-    colours: ['Gold', 'Silver', 'Black'],
     featured: true
   },
   {
@@ -237,7 +234,6 @@ const CLARUS_PRODUCTS = [
     specs: {
       'Movement': 'Quartz',
       'Design': 'Luxury Style',
-      'Colours': 'Silver, Gold & Two-Tone Silver-Gold',
       'Packaging': 'Standard Box Included'
     },
     features: [
@@ -245,7 +241,6 @@ const CLARUS_PRODUCTS = [
       'Versatile for casual and formal occasions',
       'Available in three finishes'
     ],
-    colours: ['Silver', 'Gold', 'Two-Tone Silver-Gold'],
     featured: false
   },
   {
@@ -274,7 +269,6 @@ const CLARUS_PRODUCTS = [
       'Secure butterfly lock',
       'Durable stainless steel construction'
     ],
-    colours: ['Black', 'Gold', 'Silver'],
     featured: true
   },
   {
@@ -305,7 +299,6 @@ const CLARUS_PRODUCTS = [
       'Complements both everyday and formal wear',
       'Limited stock — quality craftsmanship'
     ],
-    colours: ['Black', 'Silver', 'Blue'],
     featured: false
   },
   {
