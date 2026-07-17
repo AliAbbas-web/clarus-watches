@@ -310,7 +310,7 @@ const CLARUS_PRODUCTS = [
   code: 'CW009',
   name: 'Audemars Piguet AP Collection',
   category: "Men's Watches",
-  price: 1250,
+  price: 1550,
   shortDesc: 'Classic AP-inspired design with working date and stainless steel chain.',
   description: 'The Audemars Piguet AP Collection offers a stylish and premium look for everyday wear. It features a working date display, a durable stainless steel chain, and a comfortable fit. Suitable for casual and formal occasions, this watch comes packed in a normal box.',
   image: 'https://i.postimg.cc/mD674tQ6/Whats-App-Image-2026-07-15-at-4-59-01-PM.jpg',
