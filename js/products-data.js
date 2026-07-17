@@ -65,7 +65,9 @@ const CLARUS_REVIEWS = {
   CW016: { rating: 4.0, count: 3 },
   CW017: { rating: 3.7, count: 3 },
   CW018: { rating: 4.2, count: 4 },
-  CW019: { rating: 4.4, count: 5 },
+  CW019: { rating: 4.4, count: 4 },
+  CW020: { rating: 4.7, count: 2 },
+  CW021: { rating: 4.1, count: 6 }, 
 };
 
 const CLARUS_PRODUCTS = [
@@ -626,6 +628,62 @@ const CLARUS_PRODUCTS = [
     'Functional seconds hand',
     'Secure butterfly lock',
     'Available in new attractive colours'
+  ],
+  featured: false,
+},
+   {
+  code: 'CW020',
+  name: 'Success Way Double Time',
+  category: "Men's Watches",
+  price: 3650,
+  shortDesc: 'Dual time watch with butterfly lock in new attractive colours.',
+  description: 'The Success Way Double Time watch is designed for those who prefer a bold and modern look. It features a dual time display, a secure butterfly lock, and is available in new attractive colours. Suitable for everyday wear as well as special occasions. Comes packed in a normal box.',
+  image: 'https://i.postimg.cc/QC4B37DH/1-removebg-preview.png',
+  images: [
+    'https://i.postimg.cc/QC4B37DH/1-removebg-preview.png',
+    'https://i.postimg.cc/J06yLX8s/2-removebg-preview.png',
+    'https://i.postimg.cc/T17y6b6Z/3-removebg-preview.png'
+  ],
+  specs: {
+    'Display': 'Dual Time',
+    'Lock': 'Butterfly Lock',
+    'Colours': 'New Attractive Colours',
+    'Packaging': 'Normal Box Included'
+  },
+  features: [
+    'Dual time display',
+    'Secure butterfly lock',
+    'Available in new attractive colours',
+    'Stylish design for everyday wear'
+  ],
+  featured: false,
+},
+   {
+  code: 'CW021',
+  name: 'Audemars Piguet',
+  category: "Men's Watches",
+  price: 2650,
+  shortDesc: 'Premium watch with working date display and butterfly lock.',
+  description: 'The Audemars Piguet watch offers a premium design with a functional working date display and a secure butterfly lock for a comfortable fit. Available in new attractive colours, it is suitable for both everyday wear and special occasions. Comes packed in a normal box.',
+  image: 'https://i.postimg.cc/3JZhdh0p/Whats-App-Image-2026-07-17-at-5-01-14-PM.jpg',
+  images: [
+    'https://i.postimg.cc/3JZhdh0p/Whats-App-Image-2026-07-17-at-5-01-14-PM.jpg',
+    'https://i.postimg.cc/zXkNVNHn/Whats-App-Image-2026-07-17-at-5-01-15-PM.jpg',
+    'https://i.postimg.cc/Wb7VhVq0/Whats-App-Image-2026-07-17-at-5-01-20-PM-removebg-preview.png',
+    'https://i.postimg.cc/HstmVm8X/Whats-App-Image-2026-07-17-at-5-01-21-PM-removebg-preview.png',
+    'https://i.postimg.cc/TYcxpx5R/Whats-App-Image-2026-07-17-at-5-01-22-PM-removebg-preview.png'
+  ],
+  specs: {
+    'Display': 'Working Date',
+    'Lock': 'Butterfly Lock',
+    'Colours': 'New Attractive Colours',
+    'Packaging': 'Normal Box Included'
+  },
+  features: [
+    'Working date display',
+    'Secure butterfly lock',
+    'Available in new attractive colours',
+    'Premium stylish design'
   ],
   featured: false,
 },
