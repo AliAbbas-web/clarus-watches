@@ -66,8 +66,8 @@ const CLARUS_REVIEWS = {
   CW017: { rating: 3.7, count: 3 },
   CW018: { rating: 4.2, count: 4 },
   CW019: { rating: 4.4, count: 4 },
-  CW020: { rating: 4.7, count: 2 },
-  CW021: { rating: 4.1, count: 6 }, 
+  CW020: { rating: 3.1, count: 2 },
+  CW021: { rating: 3.7, count: 6 }, 
 };
 
 const CLARUS_PRODUCTS = [
