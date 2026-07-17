@@ -694,7 +694,7 @@ const CLARUS_PRODUCTS = [
   code: 'CW022',
   name: 'White Aura',
   category: "Men's Watches",
-  price: 1700,
+  price: 900,
   shortDesc: 'Marble design watch with fibre quality and butterfly lock.',
   description: 'The White Aura watch features a unique marble design with a premium fibre quality finish and a secure butterfly lock for a comfortable fit. Its modern and elegant look makes it suitable for both everyday wear and special occasions. Comes packed in a normal box.',
   image: 'https://i.postimg.cc/9fkJWLdJ/Whats-App-Image-2026-07-17-at-6-22-01-PM-removebg-preview.png',
