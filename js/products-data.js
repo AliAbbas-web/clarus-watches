@@ -70,7 +70,7 @@ const CLARUS_REVIEWS = {
   CW021: { rating: 3.7, count: 6 },
   CW022: { rating: 4.2, count: 4 },
   CW023: { rating: 4.8, count: 8 },
-  CW024: { rating: 4.0, count:  },
+  CW024: { rating: 4.0, count: 1 },
   };
 
 const CLARUS_PRODUCTS = [
