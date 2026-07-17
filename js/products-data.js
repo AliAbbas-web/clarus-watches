@@ -67,8 +67,11 @@ const CLARUS_REVIEWS = {
   CW018: { rating: 4.2, count: 4 },
   CW019: { rating: 4.4, count: 4 },
   CW020: { rating: 3.1, count: 2 },
-  CW021: { rating: 3.7, count: 6 }, 
-};
+  CW021: { rating: 3.7, count: 6 },
+  CW022: { rating: 4.2, count: 4 },
+  CW023: { rating: 4.8, count: 8 },
+  CW024: { rating: 4.0, count:  },
+  };
 
 const CLARUS_PRODUCTS = [
   {
@@ -716,7 +719,7 @@ const CLARUS_PRODUCTS = [
   code: 'CW023',
   name: 'Universal Point',
   category: "Men's Watches",
-  price: 2150,
+  price: 1400,
   shortDesc: 'Stylish watch with magnetic lock and premium modern design.',
   description: 'The Universal Point watch features a sleek and modern design with a secure magnetic lock for a comfortable fit. Available in new attractive colours, it is perfect for both everyday wear and special occasions. Comes packed in a normal box.',
   image: 'https://i.postimg.cc/4ddy11qF/1-removebg-preview-(1).png',
@@ -738,6 +741,35 @@ const CLARUS_PRODUCTS = [
     'Secure magnetic lock',
     'Available in new attractive colours',
     'Premium modern design',
+    'Comfortable for everyday wear'
+  ],
+  featured: false,
+},
+   {
+  code: 'CW024',
+  name: 'SunlifeX Original',
+  category: "Men's Watches",
+  price: 2990,
+  shortDesc: 'Premium steel chain watch available in new attractive colours.',
+  description: 'The SunlifeX Original watch features a premium steel chain with a stylish and modern design. Available in new attractive colours, it is suitable for both everyday wear and special occasions. Comes packed in a normal box.',
+  image: 'https://i.postimg.cc/05KWW1Ym/1.jpg',
+  images: [
+    'https://i.postimg.cc/05KWW1Ym/1.jpg',
+    'https://i.postimg.cc/mZ1XXWYS/2.jpg',
+    'https://i.postimg.cc/T2577vV0/3.jpg',
+    'https://i.postimg.cc/5NcPDKgC/4.jpg',
+    'https://i.postimg.cc/DyVCRp6b/5.jpg',
+    'https://i.postimg.cc/FstPwCp3/6.jpg'
+  ],
+  specs: {
+    'Strap': 'Steel Chain',
+    'Colours': 'New Attractive Colours',
+    'Packaging': 'Normal Box Included'
+  },
+  features: [
+    'Premium steel chain',
+    'Available in new attractive colours',
+    'Modern and stylish design',
     'Comfortable for everyday wear'
   ],
   featured: false,
