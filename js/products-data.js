@@ -748,7 +748,7 @@ const CLARUS_PRODUCTS = [
    {
   code: 'CW024',
   name: 'SunlifeX Original',
-  category: "Men's Watches",
+  category: "Women's Watches",
   price: 2990,
   shortDesc: 'Premium steel chain watch available in new attractive colours.',
   description: 'The SunlifeX Original watch features a premium steel chain with a stylish and modern design. Available in new attractive colours, it is suitable for both everyday wear and special occasions. Comes packed in a normal box.',
