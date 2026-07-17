@@ -25,6 +25,7 @@
 }
 
 .navbar .container {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -72,31 +73,18 @@
 }
 
 .nav-links a {
-  position: relative;
   font-size: 0.95rem;
   font-weight: 400;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--text-1);
   padding-block: var(--sp-2);
-  transition: color var(--dur-fast) var(--ease);
+  transition: color 250ms var(--ease) 120ms;
 }
 
-.nav-links a::after {
-  content: '';
-  position: absolute;
-  left: 0; bottom: 0;
-  width: 0;
-  height: 2px;
-  background: var(--accent);
-  transition: width var(--dur-fast) var(--ease);
-}
-
-.nav-links a:hover { color: var(--text-0); }
-.nav-links a:hover::after { width: 100%; }
+.nav-links a:hover { color: var(--accent); }
 
 .nav-links a.active { color: var(--accent); }
-.nav-links a.active::after { width: 100%; }
 
 .nav-actions {
   display: flex;
@@ -104,6 +92,10 @@
   gap: var(--sp-3);
   flex-shrink: 0;
 }
+
+.nav-close-item { display: none; }
+
+.nav-overlay { display: none; }
 
 .nav-toggle {
   display: none;
@@ -138,6 +130,7 @@
   gap: 0.3rem;
   background: none;
   border: none;
+  padding-inline: 0;
   cursor: pointer;
   font-family: var(--font-body);
   font-size: 0.95rem;
@@ -146,21 +139,10 @@
   text-transform: uppercase;
   color: var(--text-1);
   padding-block: var(--sp-2);
-  transition: color var(--dur-fast) var(--ease);
+  transition: color 250ms var(--ease) 120ms;
 }
-.nav-dropdown-trigger:hover { color: var(--text-0); }
-.nav-dropdown-trigger::after {
-  content: '';
-  position: absolute;
-  left: 0; bottom: 0;
-  width: 0;
-  height: 2px;
-  background: var(--accent);
-  transition: width var(--dur-fast) var(--ease);
-}
-.nav-dropdown-trigger:hover::after { width: 100%; }
+.nav-dropdown-trigger:hover { color: var(--accent); }
 .nav-dropdown-trigger.active { color: var(--accent); }
-.nav-dropdown-trigger.active::after { width: 100%; }
 .nav-dropdown-trigger .chevron { transition: transform var(--dur-fast) var(--ease); }
 .nav-item-dropdown.is-open .nav-dropdown-trigger .chevron,
 .nav-item-dropdown:hover .nav-dropdown-trigger .chevron { transform: rotate(180deg); }
@@ -207,27 +189,15 @@
 }
 
 .nav-dropdown-link {
-  position: relative;
   display: block;
   padding: 0.6rem 1rem;
   font-size: var(--fs-sm);
   font-weight: 500;
   color: var(--text-1);
   white-space: nowrap;
-  transition: color var(--dur-fast) var(--ease);
+  transition: color 250ms var(--ease) 120ms;
 }
-.nav-dropdown-link::after {
-  content: '';
-  position: absolute;
-  left: 1rem;
-  bottom: 0.35rem;
-  width: 0;
-  height: 2px;
-  background: var(--accent);
-  transition: width var(--dur-fast) var(--ease);
-}
-.nav-dropdown-link:hover { color: var(--text-0); }
-.nav-dropdown-link:hover::after { width: calc(100% - 2rem); }
+.nav-dropdown-link:hover { color: var(--accent); }
 
 /* NOTE: Hero styles live in css/home.css — hero only appears on the
    Home page, so it ships as page-specific CSS, not shared layout. */
