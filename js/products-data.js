@@ -62,7 +62,7 @@ CW012: { rating: 4.2, count: 2 },
 CW013: { rating: 4.8, count: 5 },
 CW014: { rating: 3.7, count: 3 },
 CW015: { rating: 4.4, count: 4 },
-CW016: { rating: 3.1, count: 2 },
+CW016: { rating: 4.0, count: 1 },
 CW017: { rating: 4.0, count: 1 },
 CW018: { rating: 3.6, count: 4 },
 CW019: { rating: 4.3, count: 3 },
@@ -71,6 +71,8 @@ CW021: { rating: 4.5, count: 5 },
 CW022: { rating: 3.9, count: 3 },
 CW023: { rating: 4.7, count: 4 },
 CW024: { rating: 3.8, count: 1 },
+CW025: { rating: 4.1, count: 2 },
+
   };
 
 const CLARUS_PRODUCTS = [
@@ -106,7 +108,6 @@ const CLARUS_PRODUCTS = [
       'Secure dual-clip butterfly lock',
       'Premium presentation packaging included'
     ],
-    colours: ['Gold', 'Silver', 'Rose Gold'],
     featured: false
   },
   {
@@ -134,8 +135,7 @@ const CLARUS_PRODUCTS = [
       'Comfortable for all-day wear',
       'Suits both casual and formal occasions'
     ],
-    colours: ['Black', 'Rose Gold', 'Silver'],
-    featured: true
+    featured: true,
   },
   {
     code: 'CW003',
@@ -165,7 +165,7 @@ const CLARUS_PRODUCTS = [
       'Reliable quartz movement',
       '40mm case suited to business or casual wear'
     ],
-    featured: true
+    featured: false,
   },
   {
     code: 'CW004',
@@ -193,7 +193,7 @@ const CLARUS_PRODUCTS = [
       'Reliable quartz movement',
       'Standard presentation box included'
     ],
-    featured: false
+    featured: false,
   },
   {
     code: 'CW005',
@@ -221,7 +221,7 @@ const CLARUS_PRODUCTS = [
       'Secure butterfly lock',
       'Unisex design suits both men and women'
     ],
-    featured: true
+    featured: falsez,
   },
   {
     code: 'CW006',
@@ -246,7 +246,7 @@ const CLARUS_PRODUCTS = [
       'Versatile for casual and formal occasions',
       'Available in three finishes'
     ],
-    featured: false
+    featured: false,
   },
   {
     code: 'CW007',
@@ -274,7 +274,7 @@ const CLARUS_PRODUCTS = [
       'Secure butterfly lock',
       'Durable stainless steel construction'
     ],
-    featured: true
+    featured: false,
   },
   {
     code: 'CW008',
@@ -304,7 +304,7 @@ const CLARUS_PRODUCTS = [
       'Complements both everyday and formal wear',
       'Limited stock — quality craftsmanship'
     ],
-    featured: false
+    featured: true,
   },
   {
   code: 'CW009',
@@ -333,7 +333,7 @@ const CLARUS_PRODUCTS = [
     'Comfortable for everyday wear',
     'Limited stock'
   ],
-  featured: false
+  featured: false,
   },
 {
   code: 'CW010',
@@ -366,7 +366,7 @@ const CLARUS_PRODUCTS = [
     'Butterfly master lock',
     'Trendy design'
   ],
-  featured: false,
+  featured: true,
 },
 {
   code: 'CW011',
@@ -520,7 +520,7 @@ const CLARUS_PRODUCTS = [
     'Premium cut glass finish',
     'Elegant design'
   ],
-  featured: false,
+  featured: true,
 },
 {
   code: 'CW016',
@@ -771,6 +771,63 @@ const CLARUS_PRODUCTS = [
     'Available in new attractive colours',
     'Modern and stylish design',
     'Comfortable for everyday wear'
+  ],
+  featured: false,
+},
+   {
+  code: 'CW025',
+  name: 'Rado Sheffer Chain',
+  category: "Men's Watches",
+  price: 1450,
+  description: 'The Rado Sheffer Chain watch features a premium chain strap with a functional working date display. Designed for both casual and formal occasions, it offers a stylish look with a comfortable fit. Comes packed in a normal box.',
+  image: 'https://i.postimg.cc/fLLTmcg8/Whats-App-Image-2026-07-19-at-12-47-01-PM.jpg',
+  images: [
+    'https://i.postimg.cc/fLLTmcg8/Whats-App-Image-2026-07-19-at-12-47-01-PM.jpg',
+    'https://i.postimg.cc/6335nr1Y/Whats-App-Image-2026-07-19-at-12-47-01-PM-(1).jpg',
+    'https://i.postimg.cc/855PMRnH/Whats-App-Image-2026-07-19-at-12-47-02-PM.jpg'
+  ],
+  specs: {
+    'Display': 'Working Date',
+    'Strap': 'Chain',
+    'Packaging': 'Normal Box Included'
+  },
+  features: [
+    'Working date display',
+    'Premium chain strap',
+    'Comfortable fit',
+    'Suitable for everyday wear'
+  ],
+  featured: false,
+},
+   {
+  code: 'CW026',
+  name: 'Hublot Diamond Cut',
+  category: "Men's Watches",
+  price: 2100,
+  shortDesc: 'Skeleton dial watch with working date and butterfly lock.',
+  description: 'The Hublot Diamond Cut watch features a striking skeleton dial, a functional working date display, and a secure butterfly lock for a comfortable fit. Available in new attractive colours, it combines a premium look with everyday practicality. Comes packed in a normal box.',
+  image: 'https://i.postimg.cc/br1Jwz5p/1.jpg',
+  images: [
+    'https://i.postimg.cc/br1Jwz5p/1.jpg',
+    'https://i.postimg.cc/qq2RvkF0/2.jpg',
+    'https://i.postimg.cc/RhwFZMYB/3.jpg',
+    'https://i.postimg.cc/hvVjtSYq/4.jpg',
+    'https://i.postimg.cc/Wz0312yc/5.jpg',
+    'https://i.postimg.cc/Bb26nqz9/6.jpg',
+    'https://i.postimg.cc/C5b1xFQQ/7.jpg'
+  ],
+  specs: {
+    'Display': 'Working Date',
+    'Dial': 'Skeleton Dial',
+    'Lock': 'Butterfly Lock',
+    'Colours': 'New Attractive Colours',
+    'Packaging': 'Normal Box Included'
+  },
+  features: [
+    'Working date display',
+    'Skeleton dial',
+    'Secure butterfly lock',
+    'Available in new attractive colours'
   ],
   featured: false,
 },
