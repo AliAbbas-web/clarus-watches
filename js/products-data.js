@@ -221,7 +221,7 @@ const CLARUS_PRODUCTS = [
       'Secure butterfly lock',
       'Unisex design suits both men and women'
     ],
-    featured: falsez,
+    featured: false,
   },
   {
     code: 'CW006',
