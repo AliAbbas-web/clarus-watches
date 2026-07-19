@@ -135,7 +135,7 @@ const CLARUS_PRODUCTS = [
       'Comfortable for all-day wear',
       'Suits both casual and formal occasions'
     ],
-    featured: true,
+    featured: true
   },
   {
     code: 'CW003',
@@ -304,7 +304,7 @@ const CLARUS_PRODUCTS = [
       'Complements both everyday and formal wear',
       'Limited stock — quality craftsmanship'
     ],
-    featured: true,
+    featured: true
   },
   {
   code: 'CW009',
@@ -366,7 +366,7 @@ const CLARUS_PRODUCTS = [
     'Butterfly master lock',
     'Trendy design'
   ],
-  featured: true,
+  featured: true
 },
 {
   code: 'CW011',
@@ -520,7 +520,7 @@ const CLARUS_PRODUCTS = [
     'Premium cut glass finish',
     'Elegant design'
   ],
-  featured: true,
+  featured: true
 },
 {
   code: 'CW016',
