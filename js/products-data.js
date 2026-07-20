@@ -72,7 +72,17 @@ CW022: { rating: 3.9, count: 3 },
 CW023: { rating: 4.7, count: 4 },
 CW024: { rating: 3.8, count: 1 },
 CW025: { rating: 4.1, count: 2 },
-
+CW026: { rating: 4.3, count: 2 },
+CW027: { rating: 4.8, count: 5 },
+CW028: { rating: 4.5, count: 3 },
+CW029: { rating: 4.1, count: 4 },
+CW030: { rating: 4.9, count: 5 },
+CW031: { rating: 5.0, count: 2 },
+CW032: { rating: 4.6, count: 4 },
+CW033: { rating: 4.2, count: 3 },
+CW034: { rating: 4.7, count: 5 },
+CW035: { rating: 3.8, count: 2 },
+CW036: { rating: 4.4, count: 4 },
   };
 
 const CLARUS_PRODUCTS = [
@@ -828,6 +838,327 @@ const CLARUS_PRODUCTS = [
     'Skeleton dial',
     'Secure butterfly lock',
     'Available in new attractive colours'
+  ],
+  featured: false,
+},
+   {
+  code: 'CW027',
+  name: 'REWARD Premium Silicone Strap Watch',
+  category: "Men's Watches",
+  price: 1800,
+  shortDesc: 'Premium silicone strap watch with working date display.',
+  description: 'The REWARD Premium Silicone Strap Watch features a stylish and comfortable silicone strap, a functional working date display, and a reliable quartz movement. Designed for everyday wear, it offers a modern look with lasting comfort. Comes with premium packaging.',
+  image: 'https://i.postimg.cc/dQSD5Wbj/14.jpg',
+  images: [
+    'https://i.postimg.cc/dQSD5Wbj/14.jpg',
+    'https://i.postimg.cc/Y2yjdX5Y/15.jpg',
+    'https://i.postimg.cc/PfFNS6g1/16.jpg',
+    'https://i.postimg.cc/DfYmxC9s/17.jpg',
+    'https://i.postimg.cc/Wpft59Bk/18.jpg',
+    'https://i.postimg.cc/v8SD0PJ6/19.jpg'
+  ],
+  specs: {
+    'Display': 'Working Date',
+    'Movement': 'Quartz',
+    'Strap': 'Premium Silicone Strap',
+    'Packaging': 'Premium Box Included'
+  },
+  features: [
+    'Working date display',
+    'Premium silicone strap',
+    'Quartz movement',
+    'Comfortable everyday design'
+  ],
+  featured: false,
+},
+{
+  code: 'CW028',
+  name: 'REWARD Luxury Business Watch',
+  category: "Men's Watches",
+  price: 2600,
+  shortDesc: 'Luxury business watch with working day and date display.',
+  description: 'The REWARD Luxury Business Watch features an elegant two-tone gold and silver bracelet, a premium quartz movement, and a functional working day and date display. Built with a stainless steel chain and back, it offers a refined look suitable for both formal and casual wear. Comes with premium packaging.',
+  image: 'https://i.postimg.cc/cLDsJ6dQ/20.jpg',
+  images: [
+    'https://i.postimg.cc/cLDsJ6dQ/20.jpg',
+    'https://i.postimg.cc/1tFPMHwg/21.jpg',
+    'https://i.postimg.cc/Y9Fk83Yj/22.jpg',
+    'https://i.postimg.cc/VNpmjTrJ/23.jpg',
+    'https://i.postimg.cc/k4S9wcK8/24.jpg'
+  ],
+  specs: {
+    'Display': 'Working Day & Date',
+    'Movement': 'Quartz',
+    'Material': 'Stainless Steel Chain & Back',
+    'Design': 'Two-Tone Gold & Silver',
+    'Packaging': 'Premium Box Included'
+  },
+  features: [
+    'Working day and date display',
+    'Premium quartz movement',
+    'Stainless steel chain and back',
+    'Elegant two-tone bracelet design',
+    'Suitable for formal and casual wear'
+  ],
+  featured: false,
+},
+{
+  code: 'CW029',
+  name: 'REWARD Yacht Master Edition',
+  category: "Men's Watches",
+  price: 2200,
+  shortDesc: 'Premium silicone strap watch with working day and date display.',
+  description: 'The REWARD Yacht Master Edition features a modern sporty design with a smooth silicone strap, premium quartz movement, and functional day and date display. Equipped with a secure master lock, it delivers comfort, durability, and style for everyday wear. Available in three attractive colours and comes with premium packaging.',
+  image: 'https://i.postimg.cc/wMHK2d9P/25.jpg',
+  images: [
+    'https://i.postimg.cc/wMHK2d9P/25.jpg',
+    'https://i.postimg.cc/tJy0kH9r/26.jpg',
+    'https://i.postimg.cc/QCsLmrjm/27.jpg',
+    'https://i.postimg.cc/Gtr0K1bx/28.jpg',
+    'https://i.postimg.cc/C5Yy7Vw4/29.jpg',
+    'https://i.postimg.cc/nzqbqLfW/30.jpg'
+  ],
+  specs: {
+    'Display': 'Working Day & Date',
+    'Movement': 'Quartz',
+    'Strap': 'Premium Silicone Strap',
+    'Lock': 'Master Lock',
+    'Colours': '3 Colours Available',
+    'Packaging': 'Premium Box Included'
+  },
+  features: [
+    'Working day display',
+    'Working date display',
+    'Premium smooth silicone strap',
+    'Secure master lock',
+    'Available in 3 colours'
+  ],
+  featured: false,
+},
+{
+  code: 'CW030',
+  name: 'POEDAGAR Ladies Watch',
+  category: "Women's Watches",
+  price: 2800,
+  shortDesc: 'Elegant ladies watch with quartz movement and stylish chain.',
+  description: 'The POEDAGAR Ladies Watch features a premium quartz movement, an elegant Shefer chain, and a secure buckle lock for comfortable everyday wear. Its sophisticated design makes it suitable for both casual and formal occasions. Available in different attractive colours and comes with premium packaging.',
+  image: 'https://i.postimg.cc/bYLVWngn/31.jpg',
+  images: [
+    'https://i.postimg.cc/bYLVWngn/31.jpg',
+    'https://i.postimg.cc/2jT9MWG8/32.jpg',
+    'https://i.postimg.cc/MHssBkHD/33.jpg',
+    'https://i.postimg.cc/D0fjmfvL/34.jpg',
+    'https://i.postimg.cc/SRQTjQSn/35.jpg',
+    'https://i.postimg.cc/SRQTjQSX/36.jpg',
+    'https://i.postimg.cc/kGM1DMJ6/37.jpg'
+  ],
+  specs: {
+    'Movement': 'Quartz',
+    'Chain': 'Shefer Chain',
+    'Lock': 'Buckle Lock',
+    'Colours': 'Different Colours Available',
+    'Packaging': 'Premium Box Included'
+  },
+  features: [
+    'Premium quartz movement',
+    'Elegant Shefer chain',
+    'Secure buckle lock',
+    'Stylish design',
+    'Available in different colours'
+  ],
+  featured: false,
+},
+{
+  code: 'CW031',
+  name: 'BESTWIN Original Automatic Watch',
+  category: "Men's Watches",
+  price: 5250,
+  shortDesc: 'Automatic skeleton watch with open back glass and butterfly lock.',
+  description: 'The BESTWIN Original Automatic Watch features a premium automatic movement, an eye-catching skeleton dial, and an open back glass showcasing the movement. Built with excellent quality and finishing, it is equipped with a secure butterfly master lock for a comfortable fit. Comes with premium packaging.',
+  image: 'https://i.postimg.cc/HWfzft5L/38.jpg',
+  images: [
+    'https://i.postimg.cc/HWfzft5L/38.jpg',
+    'https://i.postimg.cc/DfW5jNSH/39.jpg',
+    'https://i.postimg.cc/nMbX0rXs/40.jpg',
+    'https://i.postimg.cc/yW4DvxDK/41.jpg',
+    'https://i.postimg.cc/grFxNjxm/42.jpg',
+    'https://i.postimg.cc/RC3GsYWw/43.jpg'
+  ],
+  specs: {
+    'Movement': 'Automatic',
+    'Dial': 'Skeleton Face',
+    'Back': 'Open Back Glass',
+    'Lock': 'Butterfly Master Lock',
+    'Quality': 'Premium Finishing',
+    'Packaging': 'Premium Box Included'
+  },
+  features: [
+    'Automatic movement',
+    'Skeleton face',
+    'Open back glass',
+    'Butterfly master lock',
+    'Premium quality and finishing'
+  ],
+  featured: false,
+},
+{
+  code: 'CW032',
+  name: 'CURREN Original New Model',
+  category: "Men's Watches",
+  price: 4550,
+  shortDesc: 'Premium chronograph watch with working date and double lock.',
+  description: 'The CURREN Original New Model features a premium quartz movement with fully functional chronograph and date display. Built with excellent quality and finishing, it includes a secure double lock bracelet, making it an ideal choice for both everyday wear and formal occasions. Comes with premium packaging.',
+  image: 'https://i.postimg.cc/fbJ0zGn6/44.jpg',
+  images: [
+    'https://i.postimg.cc/fbJ0zGn6/44.jpg',
+    'https://i.postimg.cc/XvpyjRSm/45.jpg',
+    'https://i.postimg.cc/q7zCJPHf/46.jpg',
+    'https://i.postimg.cc/GpHsLWwW/47.jpg'
+  ],
+  specs: {
+    'Movement': 'Quartz',
+    'Chronograph': 'Working',
+    'Display': 'Working Date',
+    'Lock': 'Double Lock',
+    'Quality': 'Premium Finishing',
+    'Packaging': 'Premium Box Included'
+  },
+  features: [
+    'Working chronograph functions',
+    'Working date display',
+    'Premium quartz movement',
+    'Secure double lock',
+    'Premium quality and finishing'
+  ],
+  featured: false,
+},
+{
+  code: 'CW033',
+  name: 'REWARD Land Dweller',
+  category: "Men's Watches",
+  price: 2300,
+  shortDesc: 'Premium stainless steel watch with multiple dial options.',
+  description: 'The REWARD Land Dweller features a premium stainless steel chain with a stylish and modern design. Available with two band colour options and multiple dial variants, it offers a versatile look suitable for both everyday wear and special occasions. Comes with premium packaging.',
+  image: 'https://i.postimg.cc/zv0JRfTQ/48.jpg',
+  images: [
+    'https://i.postimg.cc/zv0JRfTQ/48.jpg',
+    'https://i.postimg.cc/Y0bpmSQn/49.jpg',
+    'https://i.postimg.cc/yxvVSN0L/50.jpg',
+    'https://i.postimg.cc/D0B2bz1B/51.jpg',
+    'https://i.postimg.cc/C5mFfKb4/52.jpg',
+    'https://i.postimg.cc/gjNY603V/53.jpg',
+    'https://i.postimg.cc/d3qs1CZj/54.jpg',
+    'https://i.postimg.cc/1X9mtFV0/55.jpg',
+    'https://i.postimg.cc/x80fCmNL/56.jpg',
+    'https://i.postimg.cc/NFgsMX26/57.jpg'
+  ],
+  specs: {
+    'Chain': 'Stainless Steel',
+    'Band Colours': '2 Options',
+    'Dial': 'Multiple Dial Variants',
+    'Packaging': 'Premium Box Included'
+  },
+  features: [
+    'Premium stainless steel chain',
+    'Available in 2 band colours',
+    'Multiple dial options',
+    'Comfortable everyday design'
+  ],
+  featured: false,
+},
+   {
+  code: 'CW034',
+  name: 'POEDAGAR Men’s Watch',
+  category: "Men's Watches",
+  price: 3200,
+  shortDesc: 'Elegant steel chain watch with working day and date display.',
+  description: 'The POEDAGAR Men’s Watch features a premium quartz movement, a durable stainless steel chain, and a secure master lock for a comfortable fit. Equipped with working day and date functions, it combines elegance with everyday practicality. Available in different attractive colours and comes with premium packaging.',
+  image: 'https://i.postimg.cc/QMX0fx7J/58.jpg',
+  images: [
+    'https://i.postimg.cc/QMX0fx7J/58.jpg',
+    'https://i.postimg.cc/fbwB8Tdc/59.jpg',
+    'https://i.postimg.cc/3wKntJGm/60.jpg',
+    'https://i.postimg.cc/nLH03cmm/61.jpg',
+    'https://i.postimg.cc/jjsZMdf5/62.jpg',
+    'https://i.postimg.cc/s2VwTDW1/63.jpg',
+    'https://i.postimg.cc/6pVMVG8n/64.jpg',
+    'https://i.postimg.cc/sgPTPZMS/65.jpg'
+  ],
+  specs: {
+    'Movement': 'Quartz',
+    'Chain': 'Stainless Steel',
+    'Display': 'Working Day & Date',
+    'Lock': 'Master Lock',
+    'Colours': 'Different Colours Available',
+    'Packaging': 'Premium Box Included'
+  },
+  features: [
+    'Premium quartz movement',
+    'Working day and date display',
+    'Stainless steel chain',
+    'Secure master lock',
+    'Elegant design',
+    'Available in different colours'
+  ],
+  featured: false,
+},
+   {
+  code: 'CW035',
+  name: 'SPECIAL EDITION Watch',
+  category: "Men's Watches",
+  price: 5800,
+  shortDesc: 'Premium chronograph watch with curved glass and working date.',
+  description: 'The SPECIAL EDITION Watch features a premium stainless steel Sheffer chain, elegant curved glass, and a reliable quartz movement. Equipped with fully functional chronograph dials and a working date display, it offers a sophisticated design with premium finishing for both formal and everyday wear. Comes with premium packaging.',
+  image: 'https://i.postimg.cc/wvRfm4JG/66.jpg',
+  images: [
+    'https://i.postimg.cc/wvRfm4JG/66.jpg',
+    'https://i.postimg.cc/fLS29qXp/67.jpg'
+  ],
+  specs: {
+    'Movement': 'Quartz',
+    'Chain': 'Stainless Steel Sheffer Chain',
+    'Glass': 'Curved Glass',
+    'Chronograph': 'All Functions Working',
+    'Display': 'Working Date',
+    'Packaging': 'Premium Box Included'
+  },
+  features: [
+    'Working chronograph functions',
+    'Working date display',
+    'Curved glass',
+    'Premium stainless steel Sheffer chain',
+    'Elegant premium design'
+  ],
+  featured: false,
+},
+   {
+  code: 'CW036',
+  name: 'REWARD Premium VIP Edition',
+  category: "Women's Watches",
+  price: 4300,
+  shortDesc: 'Premium ladies watch with sapphire glass and Japanese quartz movement.',
+  description: 'The REWARD Premium VIP Edition is designed for women who appreciate elegance and quality. It features a Japanese quartz movement, scratch-proof sapphire glass, and a premium stainless steel chain. Finished with luminous radium indexes for enhanced visibility, this watch offers a refined look for both daily wear and special occasions. Comes with premium packaging.',
+  image: 'https://i.postimg.cc/BQ7KrSRK/68.jpg',
+  images: [
+    'https://i.postimg.cc/BQ7KrSRK/68.jpg',
+    'https://i.postimg.cc/yYpZM12J/69.jpg',
+    'https://i.postimg.cc/jd37pxBD/70.jpg',
+    'https://i.postimg.cc/jd37pxBL/71.jpg'
+  ],
+  specs: {
+    'Movement': 'Japanese Quartz',
+    'Glass': 'Scratch Proof Sapphire Glass',
+    'Chain': 'Stainless Steel',
+    'Index': 'Radium',
+    'Colour': '1 Colour',
+    'Packaging': 'Premium Box Included'
+  },
+  features: [
+    'Japanese quartz movement',
+    'Scratch proof sapphire glass',
+    'Premium stainless steel chain',
+    'Radium indexes',
+    'Elegant VIP edition design'
   ],
   featured: false,
 },
