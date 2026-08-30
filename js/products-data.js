@@ -1162,4 +1162,164 @@ const CLARUS_PRODUCTS = [
   ],
   featured: false,
 },
+   {
+  code: 'CW037',
+  name: "BESTWIN Men's Watch",
+  category: "Men's Watches",
+  price: 3199,
+  shortDesc: 'Elegant men’s watch with quartz movement, stainless steel chain, working date display, and master lock.',
+  description: "The BESTWIN Men's Watch combines an elegant design with practical everyday features. It comes with a reliable quartz movement, stainless steel chain, master lock, and a working date display. The down/second hand is also functional, giving the watch a refined and detailed appearance. Comes with a normal box.",
+  image: 'https://i.postimg.cc/Wp5m593c/2.jpg',
+  images: [
+    'https://i.postimg.cc/Wp5m593c/2.jpg',
+    'https://i.postimg.cc/PfSbS6xk/3.jpg',
+    'https://i.postimg.cc/dQ5R5W1Y/4.jpg',
+    'https://i.postimg.cc/zDxwxdBZ/5.jpg'
+  ],
+  specs: {
+    'Movement': 'Quartz',
+    'Chain': 'Stainless Steel',
+    'Lock': 'Master Lock',
+    'Date': 'Working',
+    'Second Hand': 'Working',
+    'Colour': '1 Colour',
+    'Packaging': 'Normal Box Included'
+  },
+  features: [
+    'Quartz movement',
+    'Stainless steel chain',
+    'Master lock',
+    'Working date display',
+    'Working second hand',
+    'Elegant design'
+  ],
+  featured: false,
+},
+   {
+  code: 'CW038',
+  name: "BENYAR Original Men's Watch",
+  category: "Men's Watches",
+  price: 6199,
+  shortDesc: 'Elegant BENYAR men’s watch with quartz movement, working chronograph, moonograph, date display, and leather strap.',
+  description: "The BENYAR Original Men's Watch features a new elegant round design with an index dial and fine-quality finish. It comes with a reliable quartz movement, fully working chronograph functions, a working moonograph, and a working date display. Finished with a premium leather strap and available in two different colours. Includes the original brand box, bag, catalog, card, velvet, and tag.",
+  image: 'https://i.postimg.cc/HsJMBdR9/10.jpg',
+  images: [
+    'https://i.postimg.cc/HsJMBdR9/10.jpg',
+    'https://i.postimg.cc/qMtKj4SG/6.jpg',
+    'https://i.postimg.cc/FsfSDN8y/7.jpg',
+    'https://i.postimg.cc/DyWGBnHd/8.jpg',
+    'https://i.postimg.cc/657ZYtgd/9.jpg'
+  ],
+  specs: {
+    'Movement': 'Quartz',
+    'Dial': 'Index Dial',
+    'Chronograph': 'Fully Working',
+    'Moonograph': 'Working',
+    'Date': 'Working',
+    'Strap': 'Leather',
+    'Colour': '2 Different Colours',
+    'Packaging': 'Original Brand Box, Bag, Catalog, Card, Velvet & Tag'
+  },
+  features: [
+    'New elegant round design',
+    'Quartz movement',
+    'Fully working chronograph',
+    'Working moonograph',
+    'Working date display',
+    'Premium leather strap',
+    'Available in 2 different colours'
+  ],
+  featured: false,
+},
+      {
+  code: 'CW039',
+  name: "PREMIER Women's New Arrival",
+  category: "Women's Watches",
+  price: 1800,
+  shortDesc: 'Premium women’s watch with a master lock, stainless steel chain, and 9 different colour options.',
+  description: "The PREMIER Women's New Arrival features an elegant design with a premium-quality finish. It comes with a durable stainless steel chain and a secure master lock. Available in 9 different colours, making it easy to choose a style that matches your look. Comes with a normal box.",
+  image: 'https://i.postimg.cc/xTbkLgNH/11.jpg',
+  images: [
+    'https://i.postimg.cc/xTbkLgNH/11.jpg',
+    'https://i.postimg.cc/vH615Xx6/12.jpg',
+    'https://i.postimg.cc/kXtVWwRb/13.jpg',
+    'https://i.postimg.cc/kXtVWwRR/14.jpg',
+    'https://i.postimg.cc/MKjc1tfM/15.jpg'
+  ],
+  specs: {
+    'Lock': 'Master Lock',
+    'Chain': 'Stainless Steel',
+    'Colour': '9 Different Colours',
+    'Quality': 'Premium',
+    'Packaging': 'Normal Box Included'
+  },
+  features: [
+    'Premium quality design',
+    'Stainless steel chain',
+    'Master lock',
+    'Available in 9 different colours',
+    'Elegant women’s design'
+  ],
+  featured: false,
+},
+   {
+  code: 'CW040',
+  name: 'Snake Bracelet Women Watch',
+  category: "Women's Watches",
+  price: 2100,
+  shortDesc: 'Elegant snake bracelet women’s watch with a stone-studded case and premium-quality finish.',
+  description: "The Snake Bracelet Women's Watch features a stylish bracelet-inspired design with a stone-studded case and a premium-quality finish. Available in different colours, this unique watch is designed to complement both casual and formal looks. Comes with a normal name box.",
+  image: 'https://i.postimg.cc/KYY33bPY/16.jpg',
+  images: [
+    'https://i.postimg.cc/KYY33bPY/16.jpg',
+    'https://i.postimg.cc/Zqqvvm8K/17.jpg',
+    'https://i.postimg.cc/JhhHH8Nz/18.jpg',
+    'https://i.postimg.cc/N0022t6G/19.jpg'
+  ],
+  specs: {
+    'Case': 'Stone Studded',
+    'Quality': 'Finest Quality',
+    'Colour': 'Different Colours',
+    'Packaging': 'Normal Name Box Included'
+  },
+  features: [
+    'Snake bracelet design',
+    'Stone-studded case',
+    'Finest quality finish',
+    'Available in different colours',
+    'Elegant women’s design'
+  ],
+  featured: false,
+},
+   {
+  code: 'CW041',
+  name: 'TISSOT PRX Model',
+  category: "Men's Watches",
+  price: 2499,
+  shortDesc: 'Elegant PRX model watch with a luxury look, good finishing, and new attractive colour options.',
+  description: "The TISSOT PRX Model features a refined design with good finishing and a luxury-inspired look. Available in new attractive colours, it is designed to add a stylish touch to both casual and formal outfits. Comes with a normal box.",
+  image: 'https://i.postimg.cc/8cgC4g6T/21.jpg',
+  images: [
+    'https://i.postimg.cc/8cgC4g6T/21.jpg',
+    'https://i.postimg.cc/KjhYfhMx/22.jpg',
+    'https://i.postimg.cc/fL9LYRJJ/23.jpg',
+    'https://i.postimg.cc/ZnzqHzdT/Whats-App-Image-2026-08-30-at-1-40-36-PM.jpg'
+  ],
+  specs: {
+    'Model': 'PRX',
+    'Finishing': 'Good Finishing',
+    'Look': 'Luxury Look',
+    'Colour': 'New Attractive Colours',
+    'Packaging': 'Normal Box Included'
+  },
+  features: [
+    'PRX model design',
+    'Good finishing',
+    'Luxury-inspired look',
+    'Available in new attractive colours',
+    'Elegant everyday design'
+  ],
+  featured: false,
+},
+   
 ];
