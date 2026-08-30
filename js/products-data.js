@@ -1202,7 +1202,7 @@ const CLARUS_PRODUCTS = [
   price: 6199,
   shortDesc: 'Elegant BENYAR men’s watch with quartz movement, working chronograph, moonograph, date display, and leather strap.',
   description: "The BENYAR Original Men's Watch features a new elegant round design with an index dial and fine-quality finish. It comes with a reliable quartz movement, fully working chronograph functions, a working moonograph, and a working date display. Finished with a premium leather strap and available in two different colours. Includes the original brand box, bag, catalog, card, velvet, and tag.",
-  image: 'https://i.postimg.cc/HsJMBdR9/10.jpg',
+  image: 'https://i.postimg.cc/qMtKj4SG/6.jpg',
   images: [
     'https://i.postimg.cc/HsJMBdR9/10.jpg',
     'https://i.postimg.cc/qMtKj4SG/6.jpg',
